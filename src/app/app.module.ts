@@ -8,12 +8,15 @@ import { IonicStorageModule, Storage } from '@ionic/storage';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { AddEventPage } from '../pages/add-event/add-event';
+import {AddEventPageModule} from '../pages/add-event/add-event.module';
+
 
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
-import {VideoPlayer} from '@ionic-native/video-player';
-import {Calendar} from '@ionic-native/calendar';
+import { VideoPlayer } from '@ionic-native/video-player';
+import { Calendar } from '@ionic-native/calendar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CalendarModule, CalendarDateFormatter, CalendarEventTitleFormatter } from 'angular-calendar';
@@ -54,6 +57,7 @@ export function provideSettings(storage: Storage) {
   imports: [
     BrowserModule,
     HttpClientModule,
+    AddEventPageModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -69,7 +73,8 @@ export function provideSettings(storage: Storage) {
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    AddEventPage
   ],
   providers: [
     Api,

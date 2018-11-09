@@ -4,9 +4,11 @@ import { IonicPageModule } from 'ionic-angular';
 
 import { ContentPage } from './content';
 
+import { AddEventPage } from '../add-event/add-event';
+
 @NgModule({
   declarations: [
-    ContentPage,
+    ContentPage
   ],
   imports: [
     IonicPageModule.forChild(ContentPage),
