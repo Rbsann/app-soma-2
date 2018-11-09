@@ -1,5 +1,7 @@
 {
   "name": "Soma",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

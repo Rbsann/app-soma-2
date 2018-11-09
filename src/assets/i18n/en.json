@@ -1,16 +1,16 @@
 {
-  "BACK_BUTTON_TEXT": "Back",
+  "BACK_BUTTON_TEXT": "Voltar",
 
   "NAME": "Name",
   "EMAIL": "Email",
-  "USERNAME": "Username",
-  "PASSWORD": "Password",
-  "LOGIN": "Sign in",
-  "SIGNUP": "Sign up",
-
-  "TAB1_TITLE": "Items",
-  "TAB2_TITLE": "Search",
-  "TAB3_TITLE": "Settings",
+  "USERNAME": "Usuario",
+  "PASSWORD": "Senha",
+  "LOGIN": "Entre",
+  "SIGNUP": "Registre-se",
+  "TAB0_TITLE": "Inicio",
+  "TAB1_TITLE": "Agenda",
+  "TAB2_TITLE": "Professores",
+  "TAB3_TITLE": "Adicione creditos  ",
 
   "MAP_TITLE": "Map",
 
@@ -28,9 +28,9 @@
 
   "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
 
-  "WELCOME_INTRO": "The starting point for your next great Ionic app",
+  "WELCOME_INTRO": "",
 
-  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_TITLE": "Adicionar creditos",
   "SETTINGS_OPTION1": "Option 1",
   "SETTINGS_OPTION2": "Option 2",
   "SETTINGS_OPTION3": "Option 3",
@@ -63,6 +63,6 @@
 
   "CARDS_TITLE": "Social",
 
-  "SEARCH_TITLE": "Search",
-  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+  "SEARCH_TITLE": "Procurar",
+  "SEARCH_PLACEHOLDER": "Procurar professores"
 }

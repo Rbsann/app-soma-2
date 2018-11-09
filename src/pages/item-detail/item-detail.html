@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ item.name }}</ion-title>
+    <ion-title>{{ teacher.name }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -10,9 +10,20 @@
 <ion-content>
   <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
   </div>
-
-  <div class="item-detail" padding>
-    <h2>{{item.name}}</h2>
-    <p>{{item.about}}</p>
-  </div>
+  <ion-item-sliding *ngFor="let item of item.teachers">
+    <button ion-item (click)="openItem(item)">
+      <ion-avatar item-start>
+        <img [src]="item.teacherImg" />
+      </ion-avatar>
+      <h2>{{item.name}}</h2>
+      <ionic3-star-rating
+        activeIcon = "ios-star"
+        defaultIcon = "ios-star-outline"
+        activeColor = "#488aff"
+        defaultColor = "#f4f4f4"
+        readonly="false"
+        [rating]="3">
+    </ionic3-star-rating>
+    </button>
+</ion-item-sliding>
 </ion-content>

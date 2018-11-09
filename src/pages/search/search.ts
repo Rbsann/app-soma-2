@@ -38,4 +38,9 @@ export class SearchPage {
     });
   }
 
+  
+  voltar(){
+    this.navCtrl.push('ListMasterPage');
+  }
+
 }

@@ -7,48 +7,172 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "Burt Bear",
-    "profilePic": "assets/img/speakers/bear.jpg",
-    "about": "Burt is a Bear.",
+    "name": "Biologia",
+    "profilePic": "assets/materias/biologia.jpg",
+
   };
 
 
   constructor() {
     let items = [
       {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "name": "Biologia",
+        "profilePic": "assets/materias/biologia.jpg",
+        "teachers":
+        [{
+          "name": "Darwin",
+          "teacherImg": "assets/materias/darwin.jpg"
+        },
+        {
+          "name": "Dawkins",
+          "teacherImg": "assets/materias/dawkins.jpg"
+        },
+        {
+          "name": "Wilson",
+          "teacherImg":"assets/materias/wilson.jpg"
+        }
+      ]
       },
       {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "name": "Filosofia",
+        "profilePic": "assets/materias/filosofia.png",
+        "teachers":
+        [{
+          "name": "Kant",
+          "teacherImg": "assets/materias/kant.jpg"
+        },
+        {
+          "name": "Dawkins",
+          "teacherImg": "assets/materias/rousseau.jpg"
+        },
+        {
+          "name": "Wilson",
+          "teacherImg":"assets/materias/socrates.jpg"
+        }
+      ]
+
       },
       {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "name": "Fisica",
+        "profilePic": "assets/materias/fisica.jpg",
+        "teachers":
+        [{
+          "name": "Einstein",
+          "teacherImg": "assets/materias/einstein.jpg"
+        },
+        {
+          "name": "Euler",
+          "teacherImg": "assets/materias/euler.jpg"
+        },
+        {
+          "name": "Newton",
+          "teacherImg":"assets/materias/newton.jpg"
+        }
+      ]
+
       },
       {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "name": "Geografia",
+        "profilePic": "assets/materias/geografia.jpg",
+        "teachers":
+        [{
+          "name": "Milton Santos",
+          "teacherImg": "assets/materias/MiltonSantos.jpg"
+        },
+        {
+          "name": "Ritter",
+          "teacherImg": "assets/materias/Ritter.jpg"
+        },
+        {
+          "name": "Humboldt",
+          "teacherImg":"assets/materias/humboldt.jpg"
+        }
+      ]
+
       },
       {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "name": "Historia",
+        "profilePic": "assets/materias/historia.jpg",
+        "teachers":
+        [{
+          "name": "Boris Fausto",
+          "teacherImg": "assets/materias/boris_fausto.jpg"
+        },
+        {
+          "name": "Churchill",
+          "teacherImg": "assets/materias/winston-churchill.jpg"
+        },
+        {
+          "name": "Hobsbawn",
+          "teacherImg":"assets/materias/hobsbawn.jpg"
+        }
+      ]
+
       },
       {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
+        "name": "Matematica",
+        "profilePic": "assets/materias/matematica.png",
+        "teachers":
+        [{
+          "name": "Galois",
+          "teacherImg": "assets/materias/galois.jpg"
+        },
+        {
+          "name": "Fermat",
+          "teacherImg": "assets/materias/fermat.png"
+        },
+        {
+          "name": "Terence Tao",
+          "teacherImg":"assets/materias/tao.jpg"
+        }
+      ]
+
       },
       {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
+        "name": "Portugues",
+        "profilePic": "assets/materias/portugues.jpg",
+        "teachers":
+        [{
+          "name": "Machado de Assis",
+          "teacherImg": "assets/materias/machado.jpg"
+        },
+        {
+          "name": "Paulo Freire",
+          "teacherImg": "assets/materias/paulo_freire.jpg"
+        }
+
+      ]
+
+      },
+      {
+        "name": "Quimica",
+        "profilePic": "assets/materias/quimica.png",
+        "teachers":
+        [{
+          "name": "Bohr",
+          "teacherImg": "assets/materias/bohr.jpg"
+        },
+        {
+          "name": "Dalton",
+          "teacherImg": "assets/materias/dalton.jpg"
+        },
+        {
+          "name": "Marie Curie",
+          "teacherImg": "assets/materias/currie.png"
+        }
+
+      ]
+
+      },
+      {
+        "name": "Redaçao",
+        "profilePic": "assets/materias/redacao.png",
+        "teachers":
+        [{
+          "name": "Clarice",
+          "teacherImg": "assets/materias/clarice.jpg"
+        }]
+
       }
     ];
 

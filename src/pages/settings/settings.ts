@@ -41,6 +41,13 @@ export class SettingsPage {
     public translate: TranslateService) {
   }
 
+
+
+
+  adicionar(){
+      this.navCtrl.push('ListMasterPage');
+  }
+
   _buildForm() {
     let group: any = {
       option1: [this.options.option1],

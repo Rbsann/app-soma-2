@@ -1,12 +1,9 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ 'LIST_MASTER_TITLE' | translate }}</ion-title>
-
+  <img src="../assets/img/aluno.png" width="40px" style="display:inline-block" height="40px"/>
     <ion-buttons end>
-      <button ion-button icon-only (click)="addItem()">
-        <ion-icon name="add"></ion-icon>
-      </button>
+      Creditos: R$50,00
     </ion-buttons>
   </ion-navbar>
 
@@ -15,13 +12,13 @@
 <ion-content>
 
   <ion-list>
+  <h3 ion-text color="black">Bem vindo! Qual materia gostaria de estudar hoje?</h3>
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">
         <ion-avatar item-start>
           <img [src]="item.profilePic" />
         </ion-avatar>
         <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
         <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
       </button>
 

@@ -12,6 +12,19 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
+import {VideoPlayer} from '@ionic-native/video-player';
+import {Calendar} from '@ionic-native/calendar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CalendarModule, CalendarDateFormatter, CalendarEventTitleFormatter } from 'angular-calendar';
+import { CalendarWeekHoursViewModule } from 'angular-calendar-week-hours-view';
+
+import { CustomEventTitleFormatterProvider } from '../providers/custom-event-title-formatter/custom-event-title-formatter';
+import { CustomDateFormatterProvider } from '../providers/custom-date-formatter/custom-date-formatter';
+
+import localeDe from '@angular/common/locales/de';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localeDe);
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -49,7 +62,10 @@ export function provideSettings(storage: Storage) {
       }
     }),
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    BrowserAnimationsModule,
+   CalendarModule.forRoot(),
+   CalendarWeekHoursViewModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -62,9 +78,13 @@ export function provideSettings(storage: Storage) {
     Camera,
     SplashScreen,
     StatusBar,
+    VideoPlayer,
+    Calendar,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    CustomEventTitleFormatterProvider,
+    CustomDateFormatterProvider
   ]
 })
 export class AppModule { }
